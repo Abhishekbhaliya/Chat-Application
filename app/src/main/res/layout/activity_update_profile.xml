@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UpdateProfile">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#2D9832"
+        android:id="@+id/toolbarofupdateprofile">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/backbuttonofupdateprofile"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back_icon"
+                android:layout_centerVertical="true"
+                app:tint="@color/white">
+
+            </ImageButton>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/backbuttonofupdateprofile"
+                android:id="@+id/myapptext"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_above="@+id/getnewusername"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="80dp"
+        android:id="@+id/getnewuserimage"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="130dp">
+
+        <ImageView
+            android:id="@+id/getnewuserimageinimageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image"
+            app:backgroundTint="@color/red" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/SetProfile_feb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/getnewuserimage"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="23dp"
+        android:backgroundTint="@color/white"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/edit_img"
+        app:backgroundTint="@color/red"
+        app:fabCustomSize="30dp"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_constraintBottom_toBottomOf="@+id/getnewuserimage"
+        app:layout_constraintEnd_toEndOf="@+id/getnewuserimage"
+        app:layout_constraintStart_toStartOf="@+id/getnewuserimage"
+        app:layout_constraintTop_toTopOf="@+id/getnewuserimage"
+        app:layout_editor_absoluteX="@dimen/google_1x" />
+
+    <EditText
+        android:id="@+id/getnewusername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:padding="15dp"
+        android:background="@drawable/text_background_shap"
+        android:hint="Enter Your Name"
+        android:inputType="textCapWords">
+
+    </EditText>
+
+
+    <Button
+        android:id="@+id/updateprofilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getnewusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#256827"
+        android:text="Updated"
+        android:textColor="@color/white">
+
+    </Button>
+
+
+</RelativeLayout>

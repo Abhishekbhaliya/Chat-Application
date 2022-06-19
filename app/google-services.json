@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "237880801753",
+    "project_id": "mr-chat-a9511",
+    "storage_bucket": "mr-chat-a9511.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237880801753:android:adec8a6cb690f943ba41c8",
+        "android_client_info": {
+          "package_name": "com.bhaliya.mr_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237880801753-5jg23tsbmj293k9pt55nl3ah8djsgpac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhaliya.mr_chat",
+            "certificate_hash": "9973c04612983a92f6d022d754d8e91996b48229"
+          }
+        },
+        {
+          "client_id": "237880801753-tdv5kcqi0ghshpj6ek8nr75j3utq9bj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkEATH6f59X6mIDDqKE45hNLohwFfsvbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237880801753-tdv5kcqi0ghshpj6ek8nr75j3utq9bj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

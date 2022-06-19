@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".otp_verification">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/otp_icon" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify:-"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#036007"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/verifynumbertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number"
+            android:layout_marginLeft="5dp"
+            android:textColor="#203085"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+        <TextView
+            android:text="Enter the OTP code to Verify your Phone Number"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textColor="#2B512D"
+            android:textStyle="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:inputType="number"
+            android:itemBackground="@color/white"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/black"
+            app:OtpItemCount="6"
+            app:OtpLineColor="@color/black"
+            app:OtpViewType="line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did't recive OTP ?"
+                android:textSize="14sp"
+                android:textColor="#2B512D"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send OTP again"
+                android:textColor="@color/colortextfirst"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="15sp"
+                android:id="@+id/sendotp_again"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/submitBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="#256827"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Submit"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textStyle="bold|normal" />-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
